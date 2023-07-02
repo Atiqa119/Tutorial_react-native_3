@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-// Install tab navigation dependency
+// Install tab navigation dependency in terminal
 // npm install @react-navigation/bottom-tabs
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Ionicons} from '@expo/vector-icons';
