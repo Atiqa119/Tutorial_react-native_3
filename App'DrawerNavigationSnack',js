@@ -1,0 +1,21 @@
+import * as React from 'react';
+import Constants from 'expo-constants';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import WelcomeScreen from './components/WelcomeScreen';
+import LoginScreen from './components/LoginScreen';
+
+
+const Drawer = createDrawerNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Drawer.Navigator useLegacyImplementation initialRouteName="Welcome">
+        <Drawer.Screen name="WelcomeScreen"component={WelcomeScreen} />
+        <Drawer.Screen name="LoginScreen" component={LoginScreen} />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
+}
