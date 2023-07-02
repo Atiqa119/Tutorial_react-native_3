@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import {  ImageBackground, Pressable, StyleSheet, Text, View, } from 'react-native';
 
 const image = {uri: 'https://blog.logrocket.com/wp-content/uploads/2021/07/build-ios-app-react-native.png'};
+
 export default function App(props) {
   return (
     <View style={styles.container}>
